@@ -5,7 +5,7 @@ import { HashRouter as Router, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 // Store: Importa o componente que envolve a aplicação e permite que a aplicação tenha acesso ao estado da aplicação
 import store from './store';
-import Pedidos from './containers/Pedidos/index';
+import Pedidos from './containers/Pedidos';
 import base from './containers/HOC/Base';
 
 

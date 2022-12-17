@@ -20,7 +20,7 @@ const TabelaSimples = ({ cabecalho, dados  }) => (
                     dados.map((linha, index) => (
                         <tr key={index}>
                             {
-                                Object.keys(cabecalho).map((item, index) => (
+                                cabecalho.map((item, index) => (
                                    linha[item] ? <td key={index}>{linha[item]}</td> : <td key={index}></td>
 
 

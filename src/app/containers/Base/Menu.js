@@ -10,11 +10,9 @@ class Menu extends Component{
     render(){
     const { open } = this.state;
     return(
-        <div className='Menu'>
-            <div className='item-top' onClick={() => this.seOpen()}>
-                {
-                    open ? (<i className='fas fa-arrow-left' />) : (<i className='fas fa-arrow-right' />)
-                }
+        <div className={`Menu ${open ? "menu-open" : ""}`}>
+            <div className={`item-top flex ${open ? "flex-end" : "flex-center"}`} onClick={() => this.seOpen()}>
+                    {(<i className={`fas fa-arrow-${open ? "left" : "right"}`}/>)}    
             </div>
             <hr />
             {/* Passa o estado do menu e o history para o componente ListItems (itens do menu) */}

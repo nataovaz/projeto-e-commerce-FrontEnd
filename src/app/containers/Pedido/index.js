@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import DetalhesDoPedido from './DetalhesDoPedido';
 
-import DetalhesDoPagamento from './DetalhesDoPagamento';
+
 
 class Pedido extends Component {
   render() {
@@ -11,11 +11,7 @@ class Pedido extends Component {
         <div>
             <DetalhesDoPedido />
         </div>
-        <div className='flex horizontal'>
-            <div className='flex-1 flex vertical'>
-                <DetalhesDoPagamento />
-            </div>
-        </div>
+        
       </div>
     );
   }

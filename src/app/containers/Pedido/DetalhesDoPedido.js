@@ -35,20 +35,6 @@ class DetalhesDoPedido extends Component {
         )
         }
 
-    renderDadosDeEntrega(){
-        return(
-            <div>
-                <Titulo tipo="h4" titulo="Dados de Entrega" />
-                <br />
-                <TextoDados chave="Endereço" valor="Rua teste, 123" />
-                <TextoDados chave="Barrio" valor="Centro" />
-                <TextoDados chave="Cidade" valor="Belo Horizonte" />
-                <TextoDados chave="Estado" valor="MG" />
-                <TextoDados chave="CEP" valor="38540-123" />
-            </div>
-        )
-    }
-
     renderDadosDePagamento(){
         return(
             <div>
@@ -76,7 +62,7 @@ class DetalhesDoPedido extends Component {
                 "Preço Und": "R$ 2,00",
                 "Quantidade": "1",
                 "Preço Total": "R$ 2,00"
-                
+
             }
         ]
         
@@ -94,7 +80,6 @@ class DetalhesDoPedido extends Component {
             <div className="Detalhes-do-Pedido">
                 {this.renderCabecalho()}
                 {this.rendeDadosDoCliente()}
-                {this.renderDadosDeEntrega()}
                 {this.renderDadosDePagamento()}
                 {this.renderDadosDoCarrinho()}
             </div>

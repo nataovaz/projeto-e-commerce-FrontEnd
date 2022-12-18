@@ -72,7 +72,7 @@ body {
   background-color: var(--black-color);
   margin-left: -2rem;
   z-index: 100;
-  padding: 1rem;
+  padding: 10px 20px;
   height: 2rem;
 }
 
@@ -152,7 +152,7 @@ width: 10rem;
 
 .Card{
   margin: 1rem;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 1rem;
   border: 0;
   box-shadow: 0 0 0.5rem #7777;
@@ -191,8 +191,8 @@ table.simples{
 
 }
 table.simples td{
-  padding: 10px;
-  font-size: 0.9rem;
+  padding: 30px;
+  font-size: 1.2rem;
   border-bottom: 1px solid #999;
 
 }
@@ -201,7 +201,7 @@ table.simples th{
   background-color: var(--primary-color-white);
   padding: 0.75rem;
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
 }
 
 table.simples th:first-child{
@@ -220,6 +220,10 @@ table.simples th:last-child{
   margin: 5px;
   border: 1px solid #aaaa;
   cursor: pointer;
+}
+
+.button:hover{
+  background-color: rgb(156, 156, 156);
 }
 
 .button-danger{
@@ -278,3 +282,69 @@ table.simples th:last-child{
 .main{
 overflow-y: scroll;
 }
+
+
+.Input-Simples label{
+  margin: 5px 0 2px 0;
+  font-weight: bold;
+}
+.Input-Simples input{
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid var(--gray-color-light);
+  font-size: 0.95rem;
+
+}
+
+
+/* LOGIN */
+.Login .Card{
+  width: 95%;
+  max-width: 26rem;
+}
+.Login h1{
+  font-size:3rem;
+  margin-bottom: 0;
+  color: rgb(27, 1, 77);
+}
+
+.Login a {
+  text-decoration: none;
+  color: #474747
+}
+
+/* Recuperar senha */
+.Recuperar-Senha .Card{
+  width: 95%;
+  max-width: 26rem;
+}
+.Recuperar-Senha h1{
+  font-size:3rem;
+  margin-bottom: 0;
+  color: rgb(27, 1, 77);
+}
+
+.Recuperar-Senha a {
+  text-decoration: none;
+  color: #474747
+}
+
+/* Esqueceu senha */
+
+.Resetar-Senha .Card{
+  width: 95%;
+  max-width: 26rem;
+}
+.Resetar-Senha h1{
+  font-size:3rem;
+  margin-bottom: 0;
+  color: rgb(27, 1, 77);
+}
+
+.Resetar-Senha a {
+  text-decoration: none;
+  color: #474747
+}
+
+  

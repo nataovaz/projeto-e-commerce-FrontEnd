@@ -21,9 +21,11 @@ class Cadastro extends Component {
     render() {
         const { email, senha, confirmarSenha } = this.state;
         return (
-            <div className='Login'>
-                <div className='card'>
-                    <Titulo tipo="h1" titulo="LOJA TI" />
+            <div className='Login flex flex-center'>
+                <div className='Card'>
+                    <div className='flex vertical flex-center'>
+                        <Titulo tipo="h1" titulo="LOJA TI" />
+                    </div>
                     <p>Faça seu cadastro abaixo</p>
                     <Input
                         label="E-mail"
@@ -47,7 +49,9 @@ class Cadastro extends Component {
                         </div>
                     </div>
 
+                    <div className="flex flex-center">
                     <Button type="sucess" rota="/" label="Registrar-se" />
+                    </div>
                 </div>
             </div>
         );

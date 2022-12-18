@@ -23,10 +23,14 @@ class Login extends Component {
     render() {
         const { email, senha, opcaoLembrar } = this.state;
         return (
-            <div className='Login'>
-                <div className='card'>
+            <div className='Login flex flex-center'>
+                <div className='Card'>
+                    <div className="flex vertical flex-center">
                     <Titulo tipo="h1" titulo="LOJA TI" />
                     <p>Faça seu login abaixo</p>
+                    </div>
+                    <br />
+                    <br />
                     <Input
                         label="E-mail"
                         value={email}
@@ -37,20 +41,25 @@ class Login extends Component {
                         value={senha}
                         onChange={(ev) => this.onChangeInput("senha", ev)}
                     />
-                    <div>
-                        <div>
-                            <Checkbox value={opcaoLembrar} label="Lembrar?" onChang={() => this.onChangeCheckbox("opcaoLembrar")} />
+                    <div className="flex vertical">
+                        <div className="flex horizontal">
+                            <div className="flex-1">
+                                <Checkbox value={opcaoLembrar} label="Lembrar?" onChang={() => this.onChangeCheckbox("opcaoLembrar")} />
+                            </div>
+                            <div className="flex-1 flex flex-end">
+                                <Link to="/recuperar-senha"> <small>Esqueceu sua senha?</small> </Link>
+                            </div>
                         </div>
-                        <div>
-                            <Link to="/recuperar-senha">Esqueceu sua senha?</Link>
-                        </div>
-                        <div>
-
+                        <div className="flex-1 flex vertical">
                             <Link to="/cadastro">É seu primeiro acesso? Faço seu cadastro.</Link>
                         </div>
                     </div>
 
+                    <br />
+                    <br />
+                    <div className="flex flex-center">
                     <Button type="sucess" rota="/" label="ENTRAR" />
+                    </div>
                 </div>
             </div>
         );

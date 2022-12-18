@@ -5,11 +5,6 @@ import { Link } from 'react-router-dom';
 const items = [
     {
         rota: "/",
-        icone: (<i className='fas fa-copy' />),
-        titulo: "Pedidos"
-    },
-    {
-        rota: "/clientes",
         icone: (<i className='fas fa-users' />),
         titulo: "Clientes"
     },
@@ -18,6 +13,12 @@ const items = [
         icone: (<i className='fas fa-boxes' />),
         titulo: "Produtos"
     },
+    {
+        rota: "/opcao",
+        icone: (<i className='fas fa-gear' />),
+        titulo: "Opções"
+    }
+
 ]
 const ListItems = ({ open, history }) => {
     // Verifica se o item está ativo (se a rota atual é igual a rota do item)

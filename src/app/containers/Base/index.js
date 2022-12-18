@@ -15,10 +15,10 @@ class Base extends React.Component{
                     <div className='flex horizontal'>
                         <BarraTopo />
                     </div>
-                    <div className='flex full-height'>
+                    <main className='flex full-height'>
                         {this.props.children}
                         {/* Aqui vai o conteúdo da página que está sendo renderizada */}
-                    </div>
+                    </main>
                 </div>
             </div>
         );

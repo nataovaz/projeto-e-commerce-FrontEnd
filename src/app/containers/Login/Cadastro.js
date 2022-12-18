@@ -50,7 +50,7 @@ class Cadastro extends Component {
                     </div>
 
                     <div className="flex flex-center">
-                    <Button type="sucess" rota="/" label="Registrar-se" />
+                    <Button type="sucess" rota="/login" label="Registrar-se" />
                     </div>
                 </div>
             </div>

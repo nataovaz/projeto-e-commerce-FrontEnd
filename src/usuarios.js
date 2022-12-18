@@ -13,13 +13,13 @@ export default function Users() {
 
 
 
-const url = "https://web-development2.vercel.app/";
+     const url = "https://web-development2.vercel.app/";
 
-useEffect(() => {
-  fetch(url + "users")
-    .then((response) => response.json())
-    .then((data) => setUsers(data))
-    .catch((err) => console.log(err));
-}, [url]);
+     useEffect(() => {
+     fetch(url + "users")
+     .then((response) => response.json())
+     .then((data) => setUsers(data))
+     .catch((err) => console.log(err));
+     }, [url]);
 
 }

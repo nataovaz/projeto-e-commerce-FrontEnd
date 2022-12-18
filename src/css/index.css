@@ -1,9 +1,12 @@
 :root{
-  --primary-color: rgb(139, 121, 81);
+  --primary-color: rgba(116, 61, 32, 0.824);
+  --primary-color-white: rgba(103, 67, 47, 0.824);
   --white-color: #fff;
   --black-color: #000;
   --gray-color-light: #eee;
   --gray-color-dark: #222;
+  --brown-color: rgba(39, 20, 3, 0.89);
+  --orange-color: rgb(246, 129, 11);
 }
 
 body {
@@ -16,7 +19,7 @@ body {
   background-color: var(--primary-color);
 }
 .full-width {
-  width: 90%;
+  width: 100%;
 }
 .full-height {
   height: 100vh;
@@ -61,20 +64,79 @@ body {
   justify-content: flex-start;
 }
 
-.Menu {
-  color: yellow;
+/* COMPONENTS */
+
+.Barra-Topo{
+  background-color: var(--black-color);
+  margin-left: -2rem;
+  z-index: 100;
+  padding: 1rem;
+  height: 2rem;
 }
 
+.Barra-Topo a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: bold;
+}
 
-.items-wrapper{
+.Menu {
+  background-color: var(--brown-color);
   min-height: 100vh;
-  background-color: rgba(39, 20, 3, 0.89);
+  margin-right: 2rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px #111;
+  
+}
+
+.Menu a {
+  color: var(--white-color);
+  text-decoration: none;  
+
+}
+.Menu a:hover {
+  color: var(--orange-color);
+  transition: 0.8s;
+
+  
+}
+
+.menu-open{
+width: 10rem;
+}
+
+.menu-item{
+  height: 3rem;
+}
+
+.menu-item i {
+  font-size: 1.4rem
+}
+
+.menu-item:hover, .menu-item-active{
+  background-color: var(--primary-color-white);
+  border-radius: 1rem;  
+  transform: scale(1.1);
+}
+
+.item-top{
+  padding: 1rem;
+  padding-bottom: 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--white-color)
+}
+
+/* .items-wrapper{
+  min-height: 100vh;
+  background-color: var(--brown-color);
   margin-right: 2rem;
   padding: 1rem;
 }
+*/
 .items-wrapper span{
   padding: 0.5rem;
-}
+} 
 
 
 .Pedidos{
@@ -82,11 +144,17 @@ body {
 }
 
 .fas {
-  /* color:rgb(246, 11, 195); */
-  color:rgb(246, 129, 11);
+  color: var(--orange-color);
 }
 
 .logOut {
   padding: 2rem;
   color: #f00;
+}
+
+.Card{
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0;
 }

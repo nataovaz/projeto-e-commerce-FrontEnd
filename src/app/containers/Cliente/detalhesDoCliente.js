@@ -21,7 +21,6 @@ class DetalhesDoCliente extends Component{
                 </div>
                 <div className='flex-1 flex flex-end'>
                     <ButtonSimples onClick={() => alert("Salvo!")} label="Salvar" type="success" />
-                    <ButtonSimples onClick={() => alert("Removido!")} label="Remover" type="danger" />
                 </div>
             </div>
         );
@@ -33,18 +32,13 @@ class DetalhesDoCliente extends Component{
 
 
     renderDetalhesCadastro(){
-        const {nome, CPF, telefone, email} = this.state;
+        const {nome, email} = this.state;
         return (
             <div className='Detalhes-do-Cadastro'>
                 <TextoDados chave="Nome" valor={(
                     <InputValor name="nome" noStyle handleSubmit={(valor) => this.handleSubmit("nome", valor) } value={nome} />
                 )} />
-                <TextoDados chave="CPF" valor={(
-                    <InputValor name="CPF" noStyle handleSubmit={(valor) => this.handleSubmit("CPF", valor) } value={CPF} />
-                )} />
-                <TextoDados chave="Telefone"  valor={(
-                    <InputValor name="Telefone" noStyle handleSubmit={(valor) => this.handleSubmit("Telefone", valor) } value={telefone} />
-                )} />
+               
                 <TextoDados chave="E-mail" valor={(
                     <InputValor name="E-mail" noStyle handleSubmit={(valor) => this.handleSubmit("E-mail", valor) } value={email} />
                 )} />

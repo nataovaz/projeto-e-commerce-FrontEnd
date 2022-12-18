@@ -58,7 +58,7 @@ class Login extends Component {
                     <br />
                     <br />
                     <div className="flex flex-center">
-                    <Button type="sucess" rota="/" label="ENTRAR" />
+                    <Button type="sucess" rota="/clientes" label="ENTRAR" />
                     </div>
                 </div>
             </div>

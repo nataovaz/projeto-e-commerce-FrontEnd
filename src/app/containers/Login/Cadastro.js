@@ -45,12 +45,12 @@ class Cadastro extends Component {
                     <div>
                         
                         <div>
-                            <Link to="/login">Deseja voltar e fazer o login?</Link>
+                            <Link to="/">Deseja voltar e fazer o login?</Link>
                         </div>
                     </div>
 
                     <div className="flex flex-center">
-                    <Button type="sucess" rota="/login" label="Registrar-se" />
+                    <Button type="sucess" rota="/" label="Registrar-se" />
                     </div>
                 </div>
             </div>

@@ -22,15 +22,11 @@ class Clientes extends Component{
       {
         "Cliente": "Cliente 1",
         "E-mail": "cliente@hotmail.com",
-        "Telefone": "11 1234-5678",
-        "CPF": "111.222.333-45",
         "botaoDetalhes": "/cliente/cliente1@hotmail.com"
       },
       {
         "Cliente": "Cliente 2",
         "E-mail": "cliente@hotmail.com",
-        "Telefone": "11 1234-5678",
-        "CPF": "111.222.333-45",
         "botaoDetalhes": "/cliente/cliente2@hotmail.com"
 
       }
@@ -45,7 +41,7 @@ class Clientes extends Component{
         <Pesquisa valor={pesquisa} placeholder={"Pesquise pelo nome do cliente..."} onChange={(ev) => this.onChangePesquisa(ev)} onClick={() => alert("Pesquisar")} />
         <br />
         <Tabela 
-          cabecalho={["Cliente", "E-mail", "Telefone", "CPF"]}
+          cabecalho={["Cliente", "E-mail"]}
           dados = {dados}
         />
         <Paginacao atual={this.state.atual} total={120} limite={20} onClick={(numeroAtual) => this.changeNumeroAtual(numeroAtual)} />

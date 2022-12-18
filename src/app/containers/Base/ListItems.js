@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // Array de itens do menu lateral esquerdo
 const items = [
     {
-        rota: "/",
+        rota: "/clientes",
         icone: (<i className='fas fa-users' />),
         titulo: "Clientes"
     },
@@ -15,7 +15,7 @@ const items = [
     },
     {
         rota: "/painel",
-        icone: (<i className='fas fa-gear' />),
+        icone: (<i className='fas fa-file' />),
         titulo: "Painel"
     },
     {

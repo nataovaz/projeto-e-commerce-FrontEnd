@@ -38,7 +38,7 @@ class ResetarSenha extends Component {
                 </div>
                 <br />
                 <div className="flex flex-center">
-                    <Button type="success" rota="/login" label="RESETAR SENHA" />
+                    <Button type="success" rota="/" label="RESETAR SENHA" />
                 </div>
                 </div>
             </div>

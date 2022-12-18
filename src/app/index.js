@@ -9,8 +9,10 @@ import base from './containers/HOC/Base';
 
 // CONTAINER COM BASE
 import Clientes from './containers/Clientes';
+import Cliente from './containers/Cliente';
 import Produtos from './containers/Produtos';
 import Opcao from './containers/Opcao';
+import Painel from './containers/Painel';
 
 //CONTAINER SEM BASE
 import Login from './containers/Login';
@@ -28,7 +30,9 @@ class App extends Component {
           <div className="App">
             {/* Route é o componente que renderiza o conteúdo de uma página e base(Pedidos) é o componente que envolve o conteúdo da página que está sendo renderizada para que o conteúdo seja renderizado dentro do componente Base */}
               <Route path="/" exact component={base(Clientes)} />
+              <Route path="/cliente/:email" exact component={base(Cliente)} />
               <Route path="/produtos" exact component={base(Produtos)} />
+              <Route path="/painel" exact component={base(Painel)} />
               <Route path="/opcao" exact component={base(Opcao)} />
 
               {/* Rotas sem o usuário estar logado */}

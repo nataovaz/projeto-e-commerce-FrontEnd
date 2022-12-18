@@ -14,10 +14,15 @@ const items = [
         titulo: "Produtos"
     },
     {
+        rota: "/painel",
+        icone: (<i className='fas fa-gear' />),
+        titulo: "Painel"
+    },
+    {
         rota: "/opcao",
         icone: (<i className='fas fa-gear' />),
         titulo: "Opções"
-    }
+    },
 
 ]
 const ListItems = ({ open, history }) => {

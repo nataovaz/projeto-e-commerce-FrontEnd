@@ -297,6 +297,28 @@ overflow-y: scroll;
 
 }
 
+.Input-Valor{
+  margin: 10px 0;
+}
+
+.Input-Valor input, .Input-Valor .input{
+  border: 1px solid var(--gray-color-light);
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+}
+
+.Input-Valor .input{
+  background-color: var(--gray-color-light);
+  color: var(--gray-color-dark);
+}
+
+.Input-Valor .input-nostyle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* LOGIN */
 .Login .Card{
@@ -347,4 +369,8 @@ overflow-y: scroll;
   color: #474747
 }
 
-  
+.Embed-container{
+  height: 700px;
+  width: 1450px;
+  background-color: white;
+}

@@ -37,7 +37,7 @@ class InputValor extends React.Component {
         const {value} = this.props;
         return (
             <div className='Input-Valor'>
-                <span>{value}</span>
+                <span className={this.props.noStyle ? 'input-nostyle' : 'input'}>{value}</span>
                 <div onClick ={() => this.toggleForm()}>
                     <i className="fas fa-edit"></i>
                 </div>

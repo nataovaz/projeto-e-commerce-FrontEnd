@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import moment from 'moment';
 
 import Titulo from '../../components/Texto/Titulo';
 import Pesquisa from '../../components/Inputs/Pesquisa';
@@ -25,19 +24,21 @@ class Clientes extends Component{
         "E-mail": "cliente@hotmail.com",
         "Telefone": "11 1234-5678",
         "CPF": "111.222.333-45",
+        "botaoDetalhes": "/cliente/cliente1@hotmail.com"
       },
       {
         "Cliente": "Cliente 2",
         "E-mail": "cliente@hotmail.com",
         "Telefone": "11 1234-5678",
         "CPF": "111.222.333-45",
+        "botaoDetalhes": "/cliente/cliente2@hotmail.com"
 
       }
 
     ]
     const { pesquisa } = this.state;
     return(
-      <div className='Clientes'>
+      <div className='Clientes full-width'>
         <div className='Card'>
         <Titulo tipo='h1' titulo='Clientes' />
         <br />

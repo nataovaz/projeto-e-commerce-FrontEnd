@@ -1,12 +1,13 @@
 :root{
-  --primary-color: rgba(116, 61, 32, 0.824);
+  --primary-color: rgba(116, 61, 32, 0.704);
   --primary-color-white: rgba(103, 67, 47, 0.824);
   --white-color: #fff;
   --black-color: #000;
   --gray-color-light: #eee;
   --gray-color-dark: #222;
-  --brown-color: rgba(39, 20, 3, 0.89);
+  --brown-color: rgba(39, 20, 3, 0.851);
   --orange-color: rgb(246, 129, 11);
+  --orange-2-color: rgb(215, 156, 96);
 }
 
 body {
@@ -16,7 +17,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary-color);
+  background-color: var(--gray-color-light);
+
 }
 .full-width {
   width: 100%;
@@ -124,7 +126,7 @@ width: 10rem;
   padding-bottom: 0;
   font-size: 1.3rem;
   cursor: pointer;
-  color: var(--white-color)
+  color: var(--white-color);
 }
 
 /* .items-wrapper{
@@ -147,14 +149,104 @@ width: 10rem;
   color: var(--orange-color);
 }
 
-.logOut {
-  padding: 2rem;
-  color: #f00;
-}
 
 .Card{
   margin: 1rem;
   padding: 2rem;
   border-radius: 1rem;
   border: 0;
+  box-shadow: 0 0 0.5rem #7777;
+  background-color: rgb(244, 244, 244);
+}
+.card{
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 0 0 0.5rem #7777;
+  background-color: rgb(244, 244, 244);
+}
+
+
+.Pesquisa input{
+  padding: 8px 15px;
+  border: 1px solid #cccc;
+  font-size: 1rem;
+  border-radius: 10px;
+  width: 80%;
+
+}
+
+.Pesquisa button{
+  margin-left: -30px;
+  background-color: transparent;
+  font-size: 1.1rem;
+  border: 0;
+  cursor: pointer;
+}
+
+table.simples{
+  margin-bottom: 5px;
+  border-collapse: collapse;
+
+}
+table.simples td{
+  padding: 10px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #999;
+
+}
+
+table.simples th{
+  background-color: var(--primary-color-white);
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+table.simples th:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px
+}
+
+table.simples th:last-child{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button {
+  font-size: 1rem;
+  padding: 10px 16px;
+  margin: 5px;
+  border: 1px solid #aaaa;
+  cursor: pointer;
+}
+
+.button-danger{
+  background-color: var(--primary-color-white);
+  color: var(--white-color);
+  border-radius: 1rem;
+}
+
+
+.Recuperar-Senha{
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 0 0 0.5rem #7777;
+  background-color: rgb(244, 244, 244);
+}
+.Resetar-Senha{
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 0 0 0.5rem #7777;
+  background-color: rgb(244, 244, 244);
+}
+
+.Paginacao{
+  display: flex;
+  justify-content: flex-end
 }

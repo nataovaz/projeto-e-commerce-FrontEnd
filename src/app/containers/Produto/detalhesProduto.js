@@ -12,7 +12,19 @@ class DetalhesProdutos extends Component{
         modelo: "VW",
         ano: "2019",
         quilometragem: "1200",
+        imagens: [
+            "https://dummyimage.com/100x100/ff9900/000222.jpg"
+        ]
 
+    }
+
+    renderImagens(){
+        const { imagens } = this.state;
+        return(
+            <div className='dados-de-imagens'>
+                {/* <BlocoImagens imagens={imagens} handleSubmit={() => alert("enviado")} /> */}
+            </div>
+        )
     }
 
     renderCabecalho(){
@@ -60,6 +72,9 @@ class DetalhesProdutos extends Component{
                 <div className='flex horizontal'>
                     <div className='flex vertical'>
                         {this.renderDados()}
+                    </div>
+                    <div className='fle-1 flex vertical'>
+                        {this.renderImagens()}
                     </div>
                 </div>
 

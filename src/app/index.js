@@ -32,10 +32,11 @@ class App extends Component {
         <Router>
           <div className="App">
             {/* Route é o componente que renderiza o conteúdo de uma página e base(Pedidos) é o componente que envolve o conteúdo da página que está sendo renderizada para que o conteúdo seja renderizado dentro do componente Base */}
-              <Route path={"/clientes"} exact component={base(Clientes)} />
+              <Route path={"/clientes"} component={base(Clientes)} />
               <Route path={"/cliente/:email"} component={base(Cliente)} />
               <Route path={"/produtos"} component={base(Produtos)} />
-              <Route path={"/produto/:id"} component={base(Produto)} />              <Route path={"/painel"} component={base(Painel)} />
+              <Route path={"/produto/:id"} component={base(Produto)} />              
+              <Route path={"/painel"} component={base(Painel)} />
               <Route path={"/opcao"}  component={base(Opcao)} />
 
               {/* Rotas sem o usuário estar logado */}

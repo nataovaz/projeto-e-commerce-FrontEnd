@@ -43,5 +43,6 @@ class Painel extends React.Component {
         );
     }
 }
+<></>
 
 export default Painel;
